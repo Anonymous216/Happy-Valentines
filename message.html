@@ -13,7 +13,8 @@
     }
 
     .hero {
-      height: 100vh;
+      min-height: 100vh;
+      padding: 40px 20px;
       background: linear-gradient(
         to bottom right,
         hsl(351, 45%, 64%),
@@ -50,6 +51,26 @@
       transform: scale(1.1);
       cursor: pointer;
       border: 3px solid #ff69b4;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .pictures img {
+        width: 140px;
+        height: 180px;
+        margin: 10px;
+      }
+
+      iframe {
+        height: 120px;
+      }
     }
   </style>
 
